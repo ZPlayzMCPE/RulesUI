@@ -36,13 +36,17 @@ class Main extends PluginBase implements Listener {
 						   
 						}
 					});
-					$form->setTitle("RebirthPE RulesUI Screen");
+					$form->setTitle("§bAversionPE §cRules");
 					$form->setContent("Please follow the rules.");
-					$form->adddropdown(TextFormat::BOLD . "Please respect staff and dont hack");	
+					$form->adddropdown(TextFormat::BOLD . "Please respect staff and dont §4hack!");	
+					$form->adddropdown(TextFormat::DARK_RED  . "Don't Swear and grief!");
+					$form->adddropdown(TextFormat::BLUE  . "Scamming Is bannable!");
+					$form->adddropdown(TextFormat::RED  . "Never ask for staff!);
+					$form->adddropdown(TextFormat::DARK_BLUE  . "Dont Advertise!);
 					$form->sendToPlayer($sender);
 				}
 				else{
-					$sender->sendMessage(TextFormat::RED . "Use this Command in-game.");
+					$sender->sendMessage(TextFormat::RED . "Use this Command in-game!");
 					return true;
 				}
 			break;
