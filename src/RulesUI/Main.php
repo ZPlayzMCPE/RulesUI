@@ -41,7 +41,7 @@ class Main extends PluginBase implements Listener {
 					$form->adddropdown(TextFormat::BOLD . "Please respect staff and dont §4hack!");	
 					$form->adddropdown(TextFormat::DARK_RED  . "Don't Swear and grief!");
 					$form->adddropdown(TextFormat::BLUE  . "Scamming Is bannable!");
-					$form->adddropdown(TextFormat::RED  . "Never ask for staff!);
+					$form->adddropdown(TextFormat::RED  . "Never ask for staff!");
 					$form->sendToPlayer($sender);
 				}
 				else{
