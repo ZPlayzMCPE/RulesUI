@@ -23,7 +23,7 @@ class Main extends PluginBase implements Listener {
 	
     public function onCommand(CommandSender $sender, Command $cmd, string $label,array $args) : bool {
 		switch($cmd->getName()){
-			case "rulesui":
+			case "rules":
 				if($sender instanceof Player) {
 					$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
 					$form = $api->createSimpleForm(function (Player $sender, array $data){
@@ -36,12 +36,14 @@ class Main extends PluginBase implements Listener {
 						   
 						}
 					});
-					$form->setTitle("§bAversionPE §cRules");
+					$form->setTitle("§6Void§bFactions§cPE §dRules");
 					$form->setContent("Please follow the rules.");
-					$form->adddropdown(TextFormat::BOLD . "Please respect staff and dont §4hack!");	
+					$form->adddropdown(TextFormat::BOLD . "§aPlease respect staff and dont §4hack!");	
 					$form->adddropdown(TextFormat::DARK_RED  . "Don't Swear and grief!");
-					$form->adddropdown(TextFormat::BLUE  . "Scamming Is bannable!");
+					$form->adddropdown(TextFormat::BLUE  . "STR Grinding is bannable!");
 					$form->adddropdown(TextFormat::RED  . "Never ask for staff!");
+					$form->adddropdown(TextFormat::RED . "§aDon't advertise");
+					$form->adddropdown(TextFormat::RED . "
 					$form->sendToPlayer($sender);
 				}
 				else{
