@@ -39,15 +39,15 @@ class Main extends PluginBase implements Listener {
 					$form->addButton(TextFormat::DARK_RED  . "Don’t kick/ban/mute/warn players for no reason.");
 					$form->addButton(TextFormat::BLUE  . "No asking for promotions.");
 					$form->addButton(TextFormat::RED  . "Never ask for staff!");
-					$form->addButton(TextFormat::RED . "§aDon’t keep asking me questions. Just help the players (if any, and if they want or need help) DO NOT IGNORE THEM.");
+					$form->addButton(TextFormat::RED . "§aDon’t keep asking me questions. \nJust help the players (if any, and if they want or need help) \nDO NOT IGNORE THEM.");
 					$form->addButton(TextFormat::RED . "§b Don’t grief the server.");
 					$form->addButton(TextFormat::RED . "§aNo abusing your faction power. (STR Grinding.)");
-					$form->addButton(TextFormat::RED . "§bBe patient. Don’t get too excited, as we want to stay and keep professional.");
+					$form->addButton(TextFormat::RED . "§bBe patient. Don’t get too excited, \nas we want to stay and keep professional.");
 					$form->addButton(TextFormat::RED . "§cDon’t use any banned commands which cheat the game, like /give.");
-					$form->addButton(TextFormat::RED . "§dWhen finding Hackers, make sure to report proof and ban them. (More info will be in #ban-info.");
-					$form->addButton(TextFormat::RED . "§eDon't tp raid, so don't teleport to someone's base by using /tp and raiding it. As that isn't allowed.");
-					$form->addButton(TextFormat::RED . "§aDon't abuse /invsee and /pv admin. Only use them if they have an abusive item or bannable items / gear.");
-					$form->addButton(TextFormat::RED . "§bFollow the warn info in #warn-info. Follow the ban info in #ban-info. Follow the mute info in #mute-info. Follow the kick info in #kick-info. Follow the Invsee info in #invsee-info.");
+					$form->addButton(TextFormat::RED . "§dWhen finding Hackers, make sure to report proof and ban them. \nMore info will be in #ban-info.");
+					$form->addButton(TextFormat::RED . "§eDon't tp raid, so don't teleport to someone's base by using /tp and raiding it. \nAs that isn't allowed.");
+					$form->addButton(TextFormat::RED . "§aDon't abuse /invsee and /pv admin. Only use them if they have an \nabusive item or bannable items / gear.");
+					$form->addButton(TextFormat::RED . "§bFollow the warn info in #warn-info. Follow the ban info in #ban-info. \nFollow the mute info in #mute-info. \nFollow the kick info in #kick-info. \nFollow the Invsee info in #invsee-info.");
 					$form->addButton(TextFormat::RED . "§cNo advertising.");
 					$form->sendToPlayer($sender);
 				}
