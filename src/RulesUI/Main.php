@@ -26,6 +26,7 @@ class Main extends PluginBase implements Listener {
 			case "staffrules":
 				if($sender instanceof Player) {
 					$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
+					$form = $api->createCustomForm(function (Player $sender, array $data){
 					$form = $api->createSimpleForm(function (Player $sender, array $data){
 					$result = $data[0];
 					
