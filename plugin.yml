@@ -1,8 +1,8 @@
-name: RulesUI
+name: RulesPE
 main: RulesUI\Main
-api: [3.0.0-ALPHA7, 3.0.0-ALPHA8, 3.0.0-ALPHA9, 3.0.0-ALPHA10]
-version: 0.0.1
-author: BajanVlogs
+api: [3.0.0-ALPHA7, 3.0.0-ALPHA8, 3.0.0-ALPHA10, 3.0.0-ALPHA11]
+version: 1.0.0
+author: VMPE Development Team
 
 commands:
  rules:
