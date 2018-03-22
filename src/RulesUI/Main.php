@@ -37,14 +37,15 @@ class Main extends PluginBase implements Listener {
 						}
 					});
 					$form->setTitle("§6Void§bFactions§cPE §dRules");
-					$form->setContent("Please follow the rules.");
-					$form->adddropdown(TextFormat::BOLD . "§aPlease respect staff and dont §4hack!");	
-					$form->adddropdown(TextFormat::DARK_RED  . "Don't Swear and grief!");
-					$form->adddropdown(TextFormat::BLUE  . "STR Grinding is bannable!");
-					$form->adddropdown(TextFormat::RED  . "Never ask for staff!");
-					$form->adddropdown(TextFormat::RED . "§aDon't advertise");
-					$form->adddropdown(TextFormat::RED . "§bDon't accuse staff of abuse unless actual proof is given.");
-					$form->adddropdown(TextFormat::RED . "§aDon't be racist.");
+					$form->setContent("§5Please follow the rules.");
+					$form->addButton(TextFormat::BOLD . "§aNo asking for staff");	
+					$form->addButton(TextFormat::DARK_RED  . "§bNo griefing server builds.");
+					$form->addButton(TextFormat::BLUE  . "§cDon't use hack / mods.");
+					$form->addButton(TextFormat::RED  . "§dDon't abuse duplications / exploits.");
+					$form->addButton(TextFormat::RED . "§aNo using XRay");
+					$form->addButton(TextFormat::RED . "§bDon't spam.");
+					$form->addButton(TextFormat::RED . "§cNo advertising.");
+					$form->addButton(TextFormat::RED . "§dNo swearing.");
 					$form->sendToPlayer($sender);
 				}
 				else{
