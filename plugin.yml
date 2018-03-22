@@ -1,9 +1,9 @@
-name: RulesUI
+name: StaffRulesUI
 main: RulesUI\Main
-api: [3.0.0-ALPHA7, 3.0.0-ALPHA8, 3.0.0-ALPHA9, 3.0.0-ALPHA10]
+api: [3.0.0-ALPHA7, 3.0.0-ALPHA8, 3.0.0-ALPHA10, 3.0.0-ALPHA11]
 version: 0.0.1
 author: BajanVlogs
 
 commands:
- rules:
-  description: "This is for rules using CustomUI"
+ staffrules:
+  description: "This is for Staff rules using CustomUI"
