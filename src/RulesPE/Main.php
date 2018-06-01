@@ -1,6 +1,6 @@
 <?php
 
-namespace RulesUI;
+namespace RulesPE;
 
 use pocketmine\Server;
 use pocketmine\plugin\PluginBase;
