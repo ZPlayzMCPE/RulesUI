@@ -98,7 +98,7 @@ class Main extends PluginBase implements Listener {
 				}
 			if (strtolower($command->getName()) === "staffrules") {
 				if($sender instanceof Player) {
-                                    if ($sender->hasPermission("rulesui.staff"))
+                                    if ($sender->hasPermission("rulesui.staff")) {
 					$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
 					$form = $api->createSimpleForm(function (Player $sender, array $data){
 					$result = $data[0];
