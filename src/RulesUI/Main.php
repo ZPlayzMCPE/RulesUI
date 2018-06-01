@@ -23,7 +23,7 @@ class Main extends PluginBase implements Listener {
 	
     public function onCommand(CommandSender $sender, Command $cmd, string $label,array $args) : bool {
 		switch($cmd->getName()){
-			case "youtubeinfo":
+			case "ytplus":
 				if($sender instanceof Player) {
 					$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
 					$form = $api->createSimpleForm(function (Player $sender, array $data){
@@ -40,7 +40,7 @@ class Main extends PluginBase implements Listener {
 					$form->setContent("§5Here are the requirements:");
 					$form->addButton(TextFormat::BOLD . "§aYou must have 300+ subscribers");	
 					$form->addButton(TextFormat::DARK_RED  . "§bYou must upload a video about the\nServer (GamePlay)");
-					$form->addButton(TextFormat::BLUE  . "§cYou must name the video \nrelating to VoidHCFPE");
+					$form->addButton(TextFormat::BLUE  . "§cYou must name the video \nrelating to §6Void§bHCF§cPE");
 					$form->addButton(TextFormat::RED  . "§dDon't make a haters review. :)");
 					$form->addButton(TextFormat::RED . "§aYou must add the \nip and port \nin the description.");
 					$form->addButton(TextFormat::RED . "§bIP: §3voidhcfpe.ml\n§bPort: §325647");
