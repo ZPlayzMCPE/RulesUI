@@ -1,7 +1,5 @@
 <?php
-
 namespace RulesPE;
-
 use pocketmine\Server;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
@@ -11,7 +9,6 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\CommandExecutor;
 use pocketmine\command\ConsoleCommandSender;
-
 class Main extends PluginBase implements Listener {
 	
     public function onEnable() {
@@ -22,9 +19,8 @@ class Main extends PluginBase implements Listener {
     }
 	
     public function onCommand(CommandSender $sender, Command $cmd, string $label,array $args) : bool {
-		switch($cmd->getName()){
-			case "rules":
 				if($sender instanceof Player) {
+                                    if (strtolower($command->getName()) === "rules") {
 					$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
 					$form = $api->createSimpleForm(function (Player $sender, array $data){
 					$result = $data[0];
@@ -48,8 +44,7 @@ class Main extends PluginBase implements Listener {
 					$form->addButton(TextFormat::RED . "§dNo swearing.");
 					$form->sendToPlayer($sender);
 				}
-			switch($cmd->getName()){
-			case "youtubeinfo":
+			if (strtolower($command->getName()) === "youtubeinfo") {
 				if($sender instanceof Player) {
 					$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
 					$form = $api->createSimpleForm(function (Player $sender, array $data){
@@ -75,8 +70,7 @@ class Main extends PluginBase implements Listener {
 					$form->addButton("§aWith the discord link:\n§bhtto://tinyurl.com/VMPEDisc");
 					$form->sendToPlayer($sender);
 				}
-			switch($cmd->getName()){
-                                case "ytplus":
+			if (strtolower($command->getName()) === "ytplus") {
 				if($sender instanceof Player) {
 					$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
 					$form = $api->createSimpleForm(function (Player $sender, array $data){
@@ -102,8 +96,7 @@ class Main extends PluginBase implements Listener {
 					$form->addButton("§aWith the discord link:\n§bhtto://tinyurl.com/VMPEDisc");
 					$form->sendToPlayer($sender);
 				}
-			switch($cmd->getName()){
-                                case "staffrules":
+			if (strtolower($command->getName()) === "staffrules") {
 				if($sender instanceof Player) {
                                     if ($sender->hasPermission("rulesui.staff"))
 					$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
@@ -139,8 +132,10 @@ class Main extends PluginBase implements Listener {
 					$sender->sendMessage(TextFormat::RED . "Use this Command in-game!");
 					return true;
 				}
-			break;
+                        }
 		}
 		return true;
     }
-}
+                }
+                }
+    }
