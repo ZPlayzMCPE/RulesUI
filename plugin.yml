@@ -1,9 +1,20 @@
-name: RulesPE
+name: RulesUI
 main: RulesUI\Main
 api: [3.0.0-ALPHA7, 3.0.0-ALPHA8, 3.0.0-ALPHA10, 3.0.0-ALPHA11]
-version: 1.0.0
-author: VMPE Development Team
+version: 0.3.0
+author: VMPE
 
 commands:
  rules:
   description: "This is for rules using CustomUI"
+ ytplus:
+  description: "This is for Youtube Plus Info using customUI"
+ youtubeinfo:
+  description: "This is for YouTube Info"
+ staffrules:
+  description: "Staff rules"
+  
+ permissions:
+  rulesui.staff:
+      default: op
+      description: Staff Rules command.
