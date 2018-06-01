@@ -1,9 +1,9 @@
-name: RulesPE
+name: YTRulesPE
 main: RulesUI\Main
 api: [3.0.0-ALPHA7, 3.0.0-ALPHA8, 3.0.0-ALPHA10, 3.0.0-ALPHA11]
 version: 1.0.0
 author: VMPE Development Team
 
 commands:
- rules:
+ youtubeinfo:
   description: "This is for rules using CustomUI"
