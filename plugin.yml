@@ -1,9 +1,9 @@
-name: YTRulesPE
+name: YTPlusInfo
 main: RulesUI\Main
 api: [3.0.0-ALPHA9, 3.0.0-ALPHA10, 3.0.0-ALPHA11, 3.0.0-ALPHA12]
 version: 1.0.0
 author: VMPE Development Team
 
 commands:
- youtubeinfo:
+ ytplus:
   description: "This is for rules using CustomUI"
