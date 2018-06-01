@@ -18,7 +18,7 @@ class Main extends PluginBase implements Listener {
 		}
     }
 	
-    public function onCommand(CommandSender $sender, Command $cmd, string $label,array $args) : bool {
+    public function onCommand(CommandSender $sender, Command $command, string $label,array $args) : bool {
 				if($sender instanceof Player) {
                                     if (strtolower($command->getName()) === "rules") {
 					$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
