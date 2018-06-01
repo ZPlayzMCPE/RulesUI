@@ -44,7 +44,7 @@ class Main extends PluginBase implements Listener {
 					$form->addButton(TextFormat::RED  . "§dDon't make a haters review. :)");
 					$form->addButton(TextFormat::RED . "§aYou must add the \nip and port \nin the description.");
 					$form->addButton(TextFormat::RED . "§bIP: §3voidhcfpe.ml\n§bPort: §325647");
-					$form->addButton("§aIf you've made a video about the server");
+					$form->addButton("§aIf you've made a \nvideo about the server");
 					$form->addButton(TextFormat::RED . "§dPlease contact a staff member.");
 					$form->addButton("§aWith the discord link:\n§bhtto://tinyurl.com/VMPEDisc");
 					$form->sendToPlayer($sender);
