@@ -36,11 +36,11 @@ class Main extends PluginBase implements Listener {
 						   
 						}
 					});
-					$form->setTitle("§6Void§bMiner§cPE §cYou§7Tube §dInfo");
+					$form->setTitle("§6Void§bMiner§cPE §cYou§7Tube§4+ §dInfo");
 					$form->setContent("§5Here are the requirements:");
-					$form->addButton(TextFormat::BOLD . "§aYou must have 50+ subscribers");	
+					$form->addButton(TextFormat::BOLD . "§aYou must have 300+ subscribers");	
 					$form->addButton(TextFormat::DARK_RED  . "§bYou must upload a video about the\nServer (GamePlay)");
-					$form->addButton(TextFormat::BLUE  . "§cYou must name the video \nrelating to VoidMinerPEPE");
+					$form->addButton(TextFormat::BLUE  . "§cYou must name the video \nrelating to VoidHCFPE");
 					$form->addButton(TextFormat::RED  . "§dDon't make a haters review. :)");
 					$form->addButton(TextFormat::RED . "§aYou must add the \nip and port \nin the description.");
 					$form->addButton(TextFormat::RED . "§bIP: §3voidhcfpe.ml\n§bPort: §325647");
