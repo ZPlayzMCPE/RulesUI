@@ -36,16 +36,17 @@ class Main extends PluginBase implements Listener {
 						   
 						}
 					});
-					$form->setTitle("§6Void§bFactions§cPE §dRules");
-					$form->setContent("§5Please follow the rules.");
-					$form->addButton(TextFormat::BOLD . "§aNo asking for staff");	
-					$form->addButton(TextFormat::DARK_RED  . "§bNo griefing server builds.");
-					$form->addButton(TextFormat::BLUE  . "§cDon't use hack / mods.");
-					$form->addButton(TextFormat::RED  . "§dDon't abuse duplications / exploits.");
-					$form->addButton(TextFormat::RED . "§aNo using XRay");
-					$form->addButton(TextFormat::RED . "§bDon't spam.");
-					$form->addButton(TextFormat::RED . "§cNo advertising.");
-					$form->addButton(TextFormat::RED . "§dNo swearing.");
+					$form->setTitle("§6Void§bMiner§cPE §cYou§7Tube §dInfo");
+					$form->setContent("§5Here are the requirements:");
+					$form->addButton(TextFormat::BOLD . "§aYou must have 50+ subscribers");	
+					$form->addButton(TextFormat::DARK_RED  . "§bYou must upload a video about the server\n(GamePlay)");
+					$form->addButton(TextFormat::BLUE  . "§cYou must name the video relating to VoidFactionsPE");
+					$form->addButton(TextFormat::RED  . "§dDon't make a haters review. :)");
+					$form->addButton(TextFormat::RED . "§aYou must add the ip and port in the description.");
+					$form->addButton(TextFormat::RED . "§bIP: §3voidhcfpe.ml\n§bPort: §325647");
+					$form->addButton("§aIf you've made a video about the server");
+					$form->addButton(TextFormat::RED . "§dPlease contact a staff member.");
+					$form->addButton("§aWith the discord link: §bhtto://tinyurl.com/VMPEDisc");
 					$form->sendToPlayer($sender);
 				}
 				else{
