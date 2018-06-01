@@ -48,6 +48,7 @@ class Main extends PluginBase implements Listener {
 					$form->addButton(TextFormat::RED . "§dNo swearing.");
 					$form->sendToPlayer($sender);
 				}
+			switch($cmd->getName()){
 			case "youtubeinfo":
 				if($sender instanceof Player) {
 					$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
@@ -74,6 +75,7 @@ class Main extends PluginBase implements Listener {
 					$form->addButton("§aWith the discord link:\n§bhtto://tinyurl.com/VMPEDisc");
 					$form->sendToPlayer($sender);
 				}
+			switch($cmd->getName()){
                                 case "ytplus":
 				if($sender instanceof Player) {
 					$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
@@ -100,6 +102,7 @@ class Main extends PluginBase implements Listener {
 					$form->addButton("§aWith the discord link:\n§bhtto://tinyurl.com/VMPEDisc");
 					$form->sendToPlayer($sender);
 				}
+			switch($cmd->getName()){
                                 case "staffrules":
 				if($sender instanceof Player) {
                                     if ($sender->hasPermission("rulesui.staff"))
